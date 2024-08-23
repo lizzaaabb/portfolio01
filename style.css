@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'NEXT ART', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(pics/wall_03.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: 	#F8F8F8;
+    --heading-size: 4rem;
+    --content-size: 1.3rem;
+    --primary-font: 'NEXT ART', sans-serif;
+    --letter-spacing: 0.1em;
+    --secondary-font:"Quantico", sans-serif;
+    --boowie:'BOOWIE', sans-serif;
+    --big-spacing: 0.3em;
+}
+h1{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: var(--heading-size);
+    letter-spacing: var(--letter-spacing);
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.header-span{
+    color: var(--secondary-color);
+    font-size: 1rem;
+    letter-spacing: var(--big-spacing);
+    font-family: var(--boowie);
+    margin-top: 5px;
+    font-weight: 500;
+    margin-left: 5px;
+
+}
+.main-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    height: 96%;
+    border: 0.5px solid var(--secondary-color);
+    padding: 20px;
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 120px;
+}
+.links a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--boowie);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
+}
+
+
+@media (max-width: 430px) {
+    h1{
+        font-size: 2.4rem;
+    }
+    .header-span{
+        font-size: 0.9rem;
+    }
+    .links a{
+        font-size: 1.2rem;
+    }
+
+}
