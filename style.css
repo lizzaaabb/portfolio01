@@ -21,7 +21,7 @@ body{
 :root {
     --primary-color: #fff;
     --secondary-color: 	#F8F8F8;
-    --heading-size: 4rem;
+    --heading-size: 3rem;
     --content-size: 1.3rem;
     --primary-font: 'NEXT ART', sans-serif;
     --letter-spacing: 0.1em;
@@ -56,6 +56,7 @@ h1{
     height: 96%;
     border: 0.5px solid var(--secondary-color);
     padding: 20px;
+    position: relative;
 }
 .links{
     display: flex;
@@ -72,7 +73,35 @@ h1{
     font-weight: 400;
     letter-spacing: var(--letter-spacing);
 }
-
+.projects{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 35px;
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    
+}
+.project-item{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 5px;
+}
+.project-item a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    font-family: var(--boowie);
+    font-weight: 500;
+}
+.project-item span{
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    letter-spacing: var(--letter-spacing);
+}
 
 @media (max-width: 430px) {
     h1{
@@ -83,6 +112,20 @@ h1{
     }
     .links a{
         font-size: 1.2rem;
+    }
+    .main-page {
+        width: 96%;
+        height: 97.8%;
+        flex-direction: column;
+    }
+    .project-item a{
+        font-size: 1.8rem;
+    }
+    .project-item span{
+        font-size: 0.8rem;
+    }
+    .projects{
+        right: 15px;
     }
 
 }
